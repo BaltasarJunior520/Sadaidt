@@ -7,53 +7,112 @@
   <title>Para Sadaidt</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
-    <style>
-        h1 {
-            color: #fc694f; /* Color rosa cálido */
-            font-family: 'Dancing Script', cursive;
-            text-shadow: -1px -1px 0 #000,  
-                  1px -1px 0 #000,
-                 -1px  1px 0 #000,
-                  1px  1px 0 #000; /* Borde negro */
-        }
-        h2 {
-            color: #b0e64e; /* Color rosa cálido */
-            font-family: 'Dancing Script', cursive;
-            text-shadow: -0.8px -0.8px 0 #000,  
-                  0.8px -0.8px 0 #000,
-                  -0.8px 0.8px 0 #000,
-                  0.8px  0.8px 0 #000; /* Borde negro */
-        }
-        p{
-            color: #5cdbc6;
-            font: inherit;
-            text-shadow: -1px -1px 0 #000,  
-                  1px -1px 0 #000,
-                 -1px  1px 0 #000,
-                  1px  1px 0 #000; /* Borde negro */
-        }
-    </style>
+  <style>
+    h1 {
+      color: #fc694f;
+      font-family: 'Dancing Script', cursive;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      text-align: center;
+    }
+
+    h2 {
+      color: #b0e64e;
+      font-family: 'Dancing Script', cursive;
+      text-shadow: -0.8px -0.8px 0 #000, 0.8px -0.8px 0 #000, -0.8px 0.8px 0 #000, 0.8px 0.8px 0 #000;
+      text-align: center;
+    }
+
+    p {
+      color: #5cdbc6;
+      font: inherit;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      text-align: center;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(226, 247, 135);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    .options {
+      margin-top: 20px;
+    }
+
+    .options button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .options #yes {
+      background-color: #97cfaa;
+    }
+
+    .options #no {
+      background-color: #f36c46;
+    }
+
+    #message {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(245, 237, 152, 0.95);
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #message h2 {
+      font-size: 1.5rem;
+      animation: palpitation 4s ease-in-out infinite;
+    }
+
+    @keyframes palpitation {
+      0% {
+        transform: scale(0.8);
+      }
+
+      50% {
+        transform: scale(0.9);
+      }
+
+      100% {
+        transform: scale(0.8);
+      }
+    }
+  </style>
 </head>
 
 <body>
   <main>
     <div id="message">
-      <h2><p>!!Gracias por Aceptarlo jeje¡¡ Esto es para ti</p>Desde que llegaste a mi vida, 
-        cada día ha sido especial para mi. 
-        Sin darme cuenta, fuiste conquistando mi 
-        corazón con cada pequeño gesto y cada detalle. 
-        Me encanta la persona que eres, siempre tan valiente
-        y fuerte. Quiero que sepas lo 
-        importante que eres para mí, y que cada vez que hablamos, siento 
-        una alegría indescriptible. Siempre deseo lo mejor para ti, 
-        y sigue brillando ✶ como siempre que falta mucho camino por recorrer.
-        !!Gracias por todo¡¡. 
-
-        <p> Te quiero mucho "MI PRECIOSA SADY" ♥ </p></h2>
+      <h2>
+        <p>!!Gracias por Aceptarlo jeje¡¡ Esto es para ti</p>
+        Desde que llegaste a mi vida, cada día ha sido especial para mi. Sin darme cuenta, fuiste conquistando mi corazón con cada pequeño gesto y cada detalle. Me encanta la persona que eres, siempre tan valiente y fuerte. Quiero que sepas lo importante que eres para mí, y que cada vez que hablamos, siento una alegría indescriptible. Siempre deseo lo mejor para ti, y sigue brillando ✶ como siempre que falta mucho camino por recorrer. !!Gracias por todo¡¡.
+        <p> Te quiero mucho "MI PRECIOSA SADY" ♥ </p>
+      </h2>
       <img src="./assets/dino_love_2.webp" width="250" alt="Dino Love">
     </div>
     <img src="./assets/dino_love.webp" width="250" alt="Dino Love">
-    <h1><p>!!HOLA SADAIDT¡¡</p>¿Aceptas que me quieres mucho mucho?</h1>
+    <h1>
+      <p>!!HOLA SADAIDT¡¡</p>¿Aceptas que me quieres mucho mucho?
+    </h1>
     <div class="options">
       <button id="yes">Si</button>
       <button id="no">No</button>
